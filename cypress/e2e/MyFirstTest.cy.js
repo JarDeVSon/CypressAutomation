@@ -10,12 +10,11 @@ const registrationPage = new RegistrationPage();
 const homePage = new HomePage();
 
 
-describe("My fist test in cypress with page object model", () => {
+describe("My fist test in cypress with pom model", () => {
     
     beforeEach(()=>{
         registrationPage.acessarSite();
     })
-
     it("Registration with successfully", () => {
     cy.fixture("mockdata").then((data) => {
         registrationPage.myAccount();
