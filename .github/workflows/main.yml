@@ -1,4 +1,4 @@
-name: E2E on Chrome
+name: E2E on Chrome - Cypress Tests
 
 on: [push]
 
@@ -15,3 +15,11 @@ jobs:
           browser: chrome
           install: npm install
           runTests: true
+
+      - name: Save report execution
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: report-execution
+          if-no-files-found: error
+          path: "**/reports/"          
