@@ -14,4 +14,4 @@ jobs:
         with:
           browser: chrome
           install: npm install
-          test: npm test
+          runTests: true
