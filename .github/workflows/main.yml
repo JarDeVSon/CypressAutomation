@@ -3,7 +3,7 @@ name: E2E on Chrome
 on: [push]
 
 jobs:
-  install:
+  e2e:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -13,5 +13,6 @@ jobs:
         uses: cypress-io/github-action@v3
         with:
           browser: chrome
-          test: npm test
+          install: npm install
+          start: npm start
           wait-on: "http://localhost:3000"
