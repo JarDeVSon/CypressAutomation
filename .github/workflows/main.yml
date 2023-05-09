@@ -14,5 +14,4 @@ jobs:
         with:
           browser: chrome
           install: npm install
-          start: npm start
-          wait-on: "http://localhost:3000"
+          start: cypress run --browser chrome
