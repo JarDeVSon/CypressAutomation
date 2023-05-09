@@ -9,17 +9,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Cypress run end-to-end
+      - name: Executar Testes - Cypress run end-to-end
         uses: cypress-io/github-action@v3
         with:
           browser: chrome
           install: npm install
           runTests: true
 
-      - name: Save report execution
+      - name: Salvar Relatorio dos Testes
         if: always()
         uses: actions/upload-artifact@v3
         with:
-          name: report-execution
+          name: Relatorio dos Testes
           if-no-files-found: error
           path: "**/reports/"          
