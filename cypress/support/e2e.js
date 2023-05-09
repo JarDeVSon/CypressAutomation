@@ -14,7 +14,9 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+// import './commands'
+import './commands.web'
 import 'cypress-mochawesome-reporter/register';
+import 'cypress-axe'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

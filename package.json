@@ -6,12 +6,20 @@
   "author": "Jardeson",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@types/faker": "^6.6.9",
     "cypress": "^12.9.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-mochawesome-reporter": "^3.3.0"
   },
   "scripts": {
-    "test:chrome": "cypress run --browser chrome",
+    "install": "npm install",
+    "test": "cypress run --browser chrome",
     "test:run": "cypress run"
+  },
+  "dependencies": {
+    "axe-core": "^4.6.3",
+    "cypress-axe": "^1.4.0",
+    "faker": "^5.5.3"
   }
 }

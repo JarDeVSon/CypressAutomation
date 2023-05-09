@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Cypress run
+      - name: Cypress run end-to-end
         uses: cypress-io/github-action@v3
         with:
           browser: chrome

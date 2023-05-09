@@ -11,10 +11,10 @@ module.exports = defineConfig({
       screenshotOnRunFailure=true;
       require('cypress-mochawesome-reporter/plugin')(on);
     },
-    viewportWidth: 1366,
-    viewportHeight: 768,
-    defaultCommandTimeout: 30000,
-    pageLoadTimeout: 20000,
+    viewportWidth: 1000,
+    viewportHeight: 660,
+    defaultCommandTimeout: 60000,
+    pageLoadTimeout: 30000,
     baseUrl: "https://practice.automationtesting.in/" 
   },
 })
