@@ -14,4 +14,4 @@ jobs:
         with:
           browser: chrome
           install: npm install
-          start: cypress run --browser chrome
+          test: npm test
