@@ -13,7 +13,6 @@
     "cypress-mochawesome-reporter": "^3.3.0"
   },
   "scripts": {
-    "install": "npm install",
     "test": "cypress run --browser chrome",
     "test:run": "cypress run"
   },
