@@ -34,6 +34,8 @@ describe("My fist test in cypress with pom model", () => {
   });
   it("Registration with Cypress Commands with fixture", () => {
     cy.fixture("mockdata").then((data) => {
+      cy.log(data.email);
+      cy.log(data.password);
       cy.registration(data.email, data.password);
     });
   });
