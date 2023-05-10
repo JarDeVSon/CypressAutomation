@@ -13,7 +13,7 @@ module.exports = defineConfig({
     },
     viewportWidth: 1000,
     viewportHeight: 660,
-    defaultCommandTimeout: 60000,
+    defaultCommandTimeout: 30000,
     pageLoadTimeout: 30000,
     baseUrl: "https://practice.automationtesting.in/" 
   },
