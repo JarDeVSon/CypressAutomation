@@ -5,11 +5,12 @@ on: [push]
 jobs:
   e2e:
     runs-on: ubuntu-latest
-    name: Artifacts
+    name: Cypress E2E Testing
     steps:
       - uses: actions/checkout@v3
       - uses: cypress-io/github-action@v5
         with:
+          name: Install and Run Tests 
           browser: chrome
           install: npm install
           runTests: true
