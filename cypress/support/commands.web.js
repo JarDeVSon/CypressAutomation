@@ -1,6 +1,6 @@
 import urls from '../support/urls'
 import registration from '../selectors/Registration.sel.cy.js'
-import homepage from '../selectors/HomePage.sel.cy'
+import homepage from '../selectors/Home.sel.cy'
 
 Cypress.Commands.add('registration', (email, password) => { 
     cy.visit(urls.registration);
