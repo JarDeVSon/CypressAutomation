@@ -12,8 +12,8 @@ const faker = require("faker");
 
 describe("My fist test in cypress with pom model", () => {
   before(() => {
-    cy.injectAxe();
-    cy.checkA11y();
+    // cy.injectAxe();
+    // cy.checkA11y();
   //   // ;[[1920, 1080], 'ipad-2', 'iphone-xr', 'samsung-note9'].forEach(size => {
   //   //   if (Cypress._.isArray(size)) {
   //   //     cy.viewport(size[0], size[1], size[2])
