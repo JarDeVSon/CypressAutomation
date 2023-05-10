@@ -10,7 +10,7 @@ const registrationPage = new RegistrationPage();
 const homePage = new HomePage();
 const faker = require("faker");
 
-describe("My fist test in cypress with pom model", () => {
+describe("[ My Test Suite ] - ", () => {
     // before(() => {
   //   // cy.injectAxe();
   //   // cy.checkA11y();
@@ -41,7 +41,7 @@ describe("My fist test in cypress with pom model", () => {
     cy.registration(faker.internet.email(), faker.internet.password());
   });
   })
-  context('ipad-2 768, 1024', () => {
+  context('ipad-2 768, 1024 resolution', () => {
     beforeEach(()=>{
       // cy.viewport('ipad-2');
       cy.viewport(768,1024);
