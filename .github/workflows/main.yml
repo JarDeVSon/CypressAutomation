@@ -15,22 +15,25 @@ jobs:
           browser: chrome
           install: npm install
           runTests: true
-
-      - uses: actions/upload-artifact@v3 
+          
+      - name: Relatorio dos Testes - Evidencias - Screenshots - Failed
+        uses: actions/upload-artifact@v3 
         if: failure()
         with:
-          name: Relatorio dos Testes - Evidencias - Screenshots
+          name: Relatorio dos Testes - Evidencias - Screenshots - Failed
           path: cypress/screenshots
 
-      - uses: actions/upload-artifact@v3
+      - name: Relatorio dos Testes - Evidencias - Videos
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           name: Relatorio dos Testes - Videos
           path: cypress/videos
 
-      - uses: actions/upload-artifact@v3
+      - name: Relatorio dos Testes - HTML
+        uses: actions/upload-artifact@v3
         if: always()
         with:
-          name: Relatorio dos Testes HTML 
+          name: Relatorio dos Testes - HTML 
           path: cypress/reports
           if-no-files-found: error                   
