@@ -8,9 +8,10 @@ jobs:
     name: Cypress E2E Testing
     steps:
       - uses: actions/checkout@v3
-      - uses: cypress-io/github-action@v5
+
+      - name: Cypress E2E Testing
+        uses: cypress-io/github-action@v5
         with:
-          name: Install and Run Tests 
           browser: chrome
           install: npm install
           runTests: true
@@ -18,12 +19,18 @@ jobs:
       - uses: actions/upload-artifact@v3 
         if: failure()
         with:
-          name: cypress-screenshots
-          path: "**/reports/cypress-screenshots"
+          name: Relatorio dos Testes - Evidencias - Screenshots
+          path: cypress/screenshots
 
       - uses: actions/upload-artifact@v3
         if: always()
         with:
-          name: cypress-videos
-          path: "**/reports/cypress-videos"
-          if-no-files-found: error         
+          name: Relatorio dos Testes - Videos
+          path: cypress-videos
+
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: Relatorio dos Testes HTML 
+          path: "**/reports/"
+          if-no-files-found: error                   
