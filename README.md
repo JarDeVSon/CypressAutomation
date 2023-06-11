@@ -1,7 +1,7 @@
 # CypressAutomation
 Automação End-To-End com Cypress, utlizando o padrão page objects model e geração de relatórios com Mochawesome
 
-# Pré Requisistes:
+# Pré Requisities:
 
 # Install the Nodejs:
 
@@ -16,5 +16,5 @@ Automação End-To-End com Cypress, utlizando o padrão page objects model e ger
 
 # To Open UI Cypress
 - npx cypress open
-# To run tests headless
+# To run tests in mode headless
 - npx cypress run
