@@ -3,11 +3,14 @@ Automação End-To-End com Cypress, utlizando o padrão page objects model e ger
 
 # Pré Requisistes:
 
-# Install the following CLI tools:
+# Install the Nodejs:
 
 - Nodejs: https://nodejs.org/en LTS
-- Cypress: https://www.cypress.io/ npm install cypress --save-dev
-- Mochawesome: https://www.npmjs.com/package/cypress-mochawesome-reporter npm i --save-dev cypress-mochawesome-reporter
+
+# Run the command "npm install" to install the following dependencies:
+
+- Cypress: https://www.cypress.io/
+- Mochawesome: https://www.npmjs.com/package/cypress-mochawesome-reporter
 
 # How to execute and run Cypress:
 
