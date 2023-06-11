@@ -11,6 +11,8 @@ Automação End-To-End com Cypress, utlizando o padrão page objects model e ger
 
 - Cypress: https://www.cypress.io/
 - Mochawesome: https://www.npmjs.com/package/cypress-mochawesome-reporter
+- Fakerjs: https://fakerjs.dev/guide/usage.html
+- Cypress-Axe: https://www.npmjs.com/package/cypress-axe
 
 # How to execute and run Cypress:
 
