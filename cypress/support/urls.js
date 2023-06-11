@@ -1,3 +1,6 @@
 module.exports = {
-    registration: 'https://practice.automationtesting.in/my-account/'
+    env: {
+        dev: 'https://practice.automationtesting.in/my-account/',
+        hom: 'https://practice.automationtesting.in/my-account/'
+    } 
 }
