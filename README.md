@@ -1,5 +1,4 @@
-# CypressAutomation
-The Importance of a Cypress Test Pipeline for Software Quality.
+# The Importance of a Cypress Test Pipeline for Software Quality.
 
 I will share the importance of a Cypress testing pipeline to ensure software quality. Cypress is a modern and efficient testing framework that allows you to automate front-end, API, and end-to-end tests.
 
@@ -22,18 +21,18 @@ Integrating Cypress into a test pipeline provides reliable results and helps bui
 
 ## Pré Requisites:
 
-## Install the Nodejs:
+### Install the Nodejs:
+- [Git]()
+- [Nodejs](https://nodejs.org/en)
 
-- Nodejs: https://nodejs.org/en LTS
+#### Run the command "npm install" to install the following dependencies:
 
-## Run the command "npm install" to install the following dependencies:
+- [Cypress](https://www.cypress.io/)
+- [Mochawesome](https://www.npmjs.com/package/cypress-mochawesome-reporter)
+- [Fakerjs](https://fakerjs.dev/guide/usage.html)
+- [Cypress-Axe](https://www.npmjs.com/package/cypress-axe)
 
-- Cypress: https://www.cypress.io/
-- Mochawesome: https://www.npmjs.com/package/cypress-mochawesome-reporter
-- Fakerjs: https://fakerjs.dev/guide/usage.html
-- Cypress-Axe: https://www.npmjs.com/package/cypress-axe
-
-### How to execute and run Cypress:
+##### How to execute and run Cypress:
 
 - `npx cypress open` To Open UI Cypress
 - `npx cypress run`  To run tests in headless mode
