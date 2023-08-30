@@ -10,19 +10,24 @@ const registrationPage = new RegistrationPage();
 const homePage = new HomePage();
 const faker = require("faker");
 const screens = ["desktop", "iphone-x", "iphone-6"];
+
 screens.forEach((element) => {
   describe("[ My Test Suite ] - ", () => {
+
     beforeEach(() => {
+      // callback function to execute before each test
       if (element != "desktop") {
         cy.viewport(element);
       }
     });
     // afterEach(() => {
+      //callback function to execute after each test
     //   cy.injectAxe();
     //   cy.checkA11y();
     // })
     it("Registration with successfully", () => {
       // cy.fixture("mockdata").then((data) => {
+
       registrationPage.acessarSite();
       registrationPage.myAccount();
       registrationPage.inserirEmail(faker.internet.email());

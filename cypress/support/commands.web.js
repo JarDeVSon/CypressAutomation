@@ -8,5 +8,5 @@ Cypress.Commands.add('registration', (email, password) => {
     cy.get(registration.fields.inputPassword).type(password,{force: true});
     cy.get(registration.buttons.btnRegister).click({force: true});
     cy.contains('p','Hello').should('be.visible');
-    cy.contains(homepage.message.textWelcome,'Hello');
+    cy.contains(homepage.message.textWelcome,'Hello').should('be.visible');
  })
