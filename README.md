@@ -4,7 +4,7 @@
 
   A Cypress test pipeline automates testing at all stages of software development. This helps identify problems early, reducing rework and costs. Furthermore, it ensures continuous quality assurance by running     tests regularly to avoid regressions.
 
-# The benefits of a Cypress test pipeline include:
+## The benefits of a Cypress test pipeline include:
 
 ✅ Early detection of problems: Automated tests identify failures and bugs early on, reducing rework and costs.
 
@@ -16,14 +16,14 @@
 
 ✅ Improved collaboration: Test automation promotes team collaboration, eliminating time-consuming manual testing and allowing for more efficient work.
 
-In short, a Cypress test pipeline is essential for ensuring software quality, with early detection of issues, continuous quality assurance, efficiency, quick feedback, and improved collaboration between teams.
-Integrating Cypress into a test pipeline provides reliable results and helps build robust, high-quality software. Give Cypress a try and enjoy the benefits of a well-structured testing pipeline! #software #quality #work #development #pipeline #github #QA #cypress
+  In short, a Cypress test pipeline is essential for ensuring software quality, with early detection of issues, continuous quality assurance, efficiency, quick feedback, and improved collaboration between teams.
+  Integrating Cypress into a test pipeline provides reliable results and helps build robust, high-quality software. Give Cypress a try and enjoy the benefits of a well-structured testing pipeline! #software #quality #work #development #pipeline #github #QA #cypress
 
-# Pré Requisites:
+## Pré Requisites:
 - [Git](https://git-scm.com/)
 - [Nodejs](https://nodejs.org/en)
 
-# Installation
+## Installation
 
 Run the command `npm install` to install the following dependencies:
 
@@ -32,7 +32,7 @@ Run the command `npm install` to install the following dependencies:
 - [Fakerjs](https://fakerjs.dev/guide/usage.html)
 - [Cypress-Axe](https://www.npmjs.com/package/cypress-axe)
 
-# How to run Cypress (Interactive mode and headless):
+#### How to run Cypress (Interactive mode and headless):
 
 
 - `npx cypress open` to open App Cypress UI
