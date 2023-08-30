@@ -9,15 +9,15 @@ import RegistrationPage from "../../pages/RegistrationPage";
 const registrationPage = new RegistrationPage();
 const homePage = new HomePage();
 const faker = require("faker");
-const screens = ["desktop", "iphone-x", "iphone-6"];
+const devices = ["desktop", "iphone-x", "iphone-6"];
 
-screens.forEach((element) => {
+devices.forEach((viewport) => {
   describe("[ My Test Suite ] - ", () => {
 
     beforeEach(() => {
       // callback function to execute before each test
-      if (element != "desktop") {
-        cy.viewport(element);
+      if (viewport != "desktop") {
+        cy.viewport(viewport);
       }
     });
     // afterEach(() => {
