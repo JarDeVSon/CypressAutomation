@@ -1,11 +1,10 @@
-# CypressAutomation
-The Importance of a Cypress Test Pipeline for Software Quality.
+# The Importance of a Cypress Test Pipeline for Software Quality.
 
-I will share the importance of a Cypress testing pipeline to ensure software quality. Cypress is a modern and efficient testing framework that allows you to automate front-end, API, and end-to-end tests.
+  I will share the importance of a Cypress testing pipeline to ensure software quality. Cypress is a modern and efficient testing framework that allows you to automate front-end, API, and end-to-end tests.
 
-A Cypress test pipeline automates testing at all stages of software development. This helps identify problems early, reducing rework and costs. Furthermore, it ensures continuous quality assurance by running tests regularly to avoid regressions.
+  A Cypress test pipeline automates testing at all stages of software development. This helps identify problems early, reducing rework and costs. Furthermore, it ensures continuous quality assurance by running     tests regularly to avoid regressions.
 
-The benefits of a Cypress test pipeline include:
+# The benefits of a Cypress test pipeline include:
 
 ✅ Early detection of problems: Automated tests identify failures and bugs early on, reducing rework and costs.
 
@@ -21,21 +20,21 @@ In short, a Cypress test pipeline is essential for ensuring software quality, wi
 Integrating Cypress into a test pipeline provides reliable results and helps build robust, high-quality software. Give Cypress a try and enjoy the benefits of a well-structured testing pipeline! #software #quality #work #development #pipeline #github #QA #cypress
 
 # Pré Requisites:
+- [Git](https://git-scm.com/)
+- [Nodejs](https://nodejs.org/en)
 
-# Install the Nodejs:
+# Installation
 
-- Nodejs: https://nodejs.org/en LTS
+Run the command `npm install` to install the following dependencies:
 
-# Run the command "npm install" to install the following dependencies:
+- [Cypress](https://www.cypress.io/)
+- [Mochawesome](https://www.npmjs.com/package/cypress-mochawesome-reporter)
+- [Fakerjs](https://fakerjs.dev/guide/usage.html)
+- [Cypress-Axe](https://www.npmjs.com/package/cypress-axe)
 
-- Cypress: https://www.cypress.io/
-- Mochawesome: https://www.npmjs.com/package/cypress-mochawesome-reporter
-- Fakerjs: https://fakerjs.dev/guide/usage.html
-- Cypress-Axe: https://www.npmjs.com/package/cypress-axe
+# How to run Cypress (Interactive mode and headless):
 
-# How to execute and run Cypress:
 
-# To Open UI Cypress
-- npx cypress open
-# To run tests in mode headless
-- npx cypress run
+- `npx cypress open` to open App Cypress UI
+- `npx cypress run` to run tests in headless mode
+
