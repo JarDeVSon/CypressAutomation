@@ -40,10 +40,10 @@ jobs:
           name: Relatorio dos Testes - HTML 
           path: cypress/reports
           if-no-files-found: error
-                            
+
   e2e-firefox:
     runs-on: ubuntu-latest
-    name: Cypress E2E Testing - Firefox Browser
+    name: Cypress E2E Testing - Firefox Browse
     steps:
       - uses: actions/checkout@v3
 
