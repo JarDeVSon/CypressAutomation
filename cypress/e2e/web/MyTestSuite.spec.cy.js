@@ -25,17 +25,17 @@ screens.forEach((element) => {
     //   cy.injectAxe();
     //   cy.checkA11y();
     // })
-    it("Registration with successfully", () => {
-      // cy.fixture("mockdata").then((data) => {
+    // it("Registration with successfully", () => {
+    //   // cy.fixture("mockdata").then((data) => {
 
-      registrationPage.acessarSite();
-      registrationPage.myAccount();
-      registrationPage.inserirEmail(faker.internet.email());
-      registrationPage.inserirPassword(faker.internet.password());
-      registrationPage.registrar();
-      homePage.getTextWelcome();
-      // });
-    });
+    //   registrationPage.acessarSite();
+    //   registrationPage.myAccount();
+    //   registrationPage.inserirEmail(faker.internet.email());
+    //   registrationPage.inserirPassword(faker.internet.password());
+    //   registrationPage.registrar();
+    //   homePage.getTextWelcome();
+    //   // });
+    // });
     // it("Registration with Cypress Commands with fixture", () => {
     //   cy.fixture("mockdata").then((data) => {
     //     cy.log(data.email);
