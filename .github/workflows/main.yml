@@ -40,39 +40,3 @@ jobs:
           name: Relatorio dos Testes - HTML 
           path: cypress/reports
           if-no-files-found: error
-
-  e2e-firefox:
-    runs-on: ubuntu-latest
-    name: Cypress E2E Testing - Firefox Browse
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Cypress E2E Testing
-        uses: cypress-io/github-action@v5
-        with:
-          browser: firefox
-          install: npm install
-          runTests: true
-          
-      - name: Relatorio dos Testes - Evidencias - Screenshots - Failed
-        uses: actions/upload-artifact@v3 
-        if: failure()
-        with:
-          name: Relatorio dos Testes - Evidencias - Screenshots - Failed
-          path: cypress/screenshots
-
-      - name: Relatorio dos Testes - Evidencias - Videos
-        uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: Relatorio dos Testes - Videos
-          path: cypress/videos
-
-      - name: Relatorio dos Testes - HTML
-        uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: Relatorio dos Testes - HTML 
-          path: cypress/reports
-          if-no-files-found: error
-         
