@@ -11,6 +11,7 @@ module.exports = defineConfig({
       screenshotOnRunFailure=true;
       require('cypress-mochawesome-reporter/plugin')(on);
     },
+    defaultBrowser: 'chrome',
     viewportWidth: 1000,
     viewportHeight: 660,
     defaultCommandTimeout: 30000,

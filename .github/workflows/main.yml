@@ -1,6 +1,5 @@
 name: E2E on Chrome - Cypress Tests
 
-
 on: 
   pull_request:
     branches: [master]
@@ -16,7 +15,7 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           browser: chrome
-          install: npm install
+          install: true
           runTests: true
           
       - name: Relatorio dos Testes - Evidencias - Screenshots - Failed
