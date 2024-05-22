@@ -18,6 +18,7 @@ devices.forEach((viewport) => {
       // callback function to execute before each test
       if (viewport != "desktop") {
         cy.viewport(viewport);
+        cy.log(viewport);
       }
     });
     // afterEach(() => {
