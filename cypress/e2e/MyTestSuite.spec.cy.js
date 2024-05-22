@@ -3,8 +3,8 @@ Cypress.on("uncaught:exception", (err, runnable) => {
   // failing the test
   return false;
 });
-import HomePage from "../../pages/HomePage";
-import RegistrationPage from "../../pages/RegistrationPage";
+import HomePage from "../pages/HomePage";
+import RegistrationPage from "../pages/RegistrationPage";
 
 const registrationPage = new RegistrationPage();
 const homePage = new HomePage();
@@ -18,6 +18,7 @@ devices.forEach((viewport) => {
       // callback function to execute before each test
       if (viewport != "desktop") {
         cy.viewport(viewport);
+        cy.log(viewport);
       }
     });
     // afterEach(() => {

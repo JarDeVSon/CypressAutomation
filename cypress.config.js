@@ -14,8 +14,9 @@ module.exports = defineConfig({
     defaultBrowser: 'chrome',
     viewportWidth: 1000,
     viewportHeight: 660,
+    waitForAnimations: true,
     defaultCommandTimeout: 30000,
     pageLoadTimeout: 30000,
-    baseUrl: "https://practice.automationtesting.in/" 
+    baseUrl: "https://practice.automationtesting.in" 
   },
 })
