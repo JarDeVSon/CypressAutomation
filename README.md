@@ -37,6 +37,6 @@ Run the command "npm install" to install the following dependencies:
 
 - `npx cypress open` To Open UI Cypress Interactive mode
 - `npx cypress run`  To run tests in headless mode
-- `npm run test:dev` To rin tests in headless mode in dev environment example
-- `npm run test:hom` To run tests in headless mode in hom/stage environment example
+- `npm run test:dev` To rin tests in headless mode in dev/develop environment example
+- `npm run test:hom` To run tests in headless mode in homolog/staging environment example
 
