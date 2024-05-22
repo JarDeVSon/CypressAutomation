@@ -12,8 +12,8 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on);
     },
     defaultBrowser: 'chrome',
-    viewportWidth: 1000,
-    viewportHeight: 660,
+    viewportWidth: 1280,
+    viewportHeight: 768,
     waitForAnimations: true,
     defaultCommandTimeout: 30000,
     pageLoadTimeout: 30000,
