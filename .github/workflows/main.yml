@@ -40,11 +40,11 @@ jobs:
         if: always()
         with:
           name: Relatorio dos Testes - HTML 
-          path: cypress/reports
+          path: cypress/reports/html/
           if-no-files-found: error
 
       - name: Implantar Resultados no Github Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: "**/reports/"          
+          publish_dir: "**/reports/html/"          
