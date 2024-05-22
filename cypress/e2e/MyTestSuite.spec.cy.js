@@ -44,6 +44,7 @@ devices.forEach((viewport) => {
     //     cy.registration(data.email, data.password);
     //   });
     // });
+    
     it("Registration with Cypress Commands with faker", () => {
       cy.registration(faker.internet.email(), faker.internet.password());
     });
