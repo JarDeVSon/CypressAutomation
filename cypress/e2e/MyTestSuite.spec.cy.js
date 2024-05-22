@@ -3,8 +3,8 @@ Cypress.on("uncaught:exception", (err, runnable) => {
   // failing the test
   return false;
 });
-import HomePage from "../../pages/HomePage";
-import RegistrationPage from "../../pages/RegistrationPage";
+import HomePage from "../pages/HomePage";
+import RegistrationPage from "../pages/RegistrationPage";
 
 const registrationPage = new RegistrationPage();
 const homePage = new HomePage();
