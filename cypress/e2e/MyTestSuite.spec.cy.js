@@ -12,7 +12,7 @@ const faker = require("faker");
 const devices = ["desktop", "iphone-x", "iphone-6"];
 
 devices.forEach((viewport) => {
-  describe("[ My Test Suite ] - ", () => {
+  describe(`[ My Test Suite ] - ${viewport}`, () => {
 
     beforeEach(() => {
       // callback function to execute before each test
