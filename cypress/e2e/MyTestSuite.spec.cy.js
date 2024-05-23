@@ -9,7 +9,7 @@ import RegistrationPage from "../pages/RegistrationPage";
 const registrationPage = new RegistrationPage();
 const homePage = new HomePage();
 const faker = require("faker");
-const devices = ["desktop", "iphone-x", "iphone-6"];
+const devices = ["desktop", "ipad-mini", "iphone-6"];
 
 devices.forEach((viewport) => {
   describe(`[ My Test Suite ] - ${viewport}`, () => {
@@ -44,7 +44,7 @@ devices.forEach((viewport) => {
     //     cy.registration(data.email, data.password);
     //   });
     // });
-    
+
     it("Registration with Cypress Commands with faker", () => {
       cy.registration(faker.internet.email(), faker.internet.password());
     });
